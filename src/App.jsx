@@ -8,7 +8,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   useEffect(()=> {
-      console.log('All env vars:', import.meta.env);
+      console.log('All env vars:', import.meta.env.VITE_NAME1);
   },[])
 
   return (
