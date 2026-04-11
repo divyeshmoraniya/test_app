@@ -6,11 +6,6 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
-  useEffect(()=> {
-      console.log('All env vars:', import.meta.env.VITE_NAME1);
-  },[])
-
   return (
     <>
       <section id="center">
@@ -18,6 +13,7 @@ function App() {
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
+          <div>{import.meta.env.VITE_NAME1}</div>
         </div>
         <div>
           <h1>Get started</h1>
