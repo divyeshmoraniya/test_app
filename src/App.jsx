@@ -5,7 +5,10 @@ import heroImg from './assets/hero.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  useEffect(()=>{
+    console.log(import.meta.env.VITE_NAME1);
+  },[])
   return (
     <>
       <section id="center">
@@ -19,7 +22,6 @@ function App() {
           <h1>Get started</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to dododododododotest <code>HMR</code>
-            <div>{import.meta.env.VITE_NAME1}</div>
           </p>
         </div>
         <button
